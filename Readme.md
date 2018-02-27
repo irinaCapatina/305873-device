@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Irina Căpățînă](https://up.htmlacademy.ru/htmlcss/20/user/305873).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Ворожцов](https://htmlacademy.ru/profile/id485797).
 
 ---
 
