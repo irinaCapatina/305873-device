@@ -14,7 +14,9 @@
 					<img src="img/search.svg" width="16" height="16" alt="search icon">
 					<li class="search link">Поиск по сайту</li>
 					<img src="img/user.svg" width="13" height="12" alt="user icon">
-					<li class="login-link">Войти</li>
+					<li class="login-link">
+						<a class="login-link" href="login.html">Войти</a>
+						</li>
 					<img src="img/compare.svg" width="10" height="10" alt="compare icon">
 					<li><a href="compare.com">Сравнить</a></li>
 					<img src="img/cart.svg" width="12" height="12" alt="cart icon">
@@ -26,6 +28,15 @@
 					<li><a href="deliveri.com">Доставка</a></li>
 					<li><a href="guarantee.com">Гарантия</a></li>
 					<li><a href="contacts">Контакты</a></li>
+				</ul>
+				<h2 class="visually-hidden">Catalog menu</h2>
+				<ul class="catalog-menu">
+						<li><a href="vr.com">Виртуальная реальность</a></li>
+						<li><a href="monopods.com">Моноподы для селфи</a></li>
+						<li><a href="action-camera.com">Экшн-камеры</a></li>
+						<li><a href="fitness-bracelets.com">Фитнес-браслеты</a></li>
+						<li><a href="smart-watch">Умные часы</a></li>
+						<li><a href="fitness bracelets">Квадрокоптеры</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -41,8 +52,8 @@
 				<p>Самая длинная палка  для селфи доступна в нашем магазине. <br>
 					Восемь (Всемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 				<a class="button" href="details.com">Подробнее</a>
-				<img src="img/slider-button.svg" width="12" height="12" alt="slider-button">
-				<img src="img/slider-button-empty.svg" width="12" height="12" alt="slider-button-empty">
+				<button class="button slider-button"><img src="img/slider-button.svg" width="12" height="12" alt="slider-button"></button>
+				<button class="button slider-button-empty"><img src="img/slider-button-empty.svg" width="12" height="12" alt="slider-button-empty"></button>
 				<ul class="offer-details">
 					<li class="details">
 						<h3>8,5 м </h3>
@@ -170,14 +181,55 @@
 			</footer>
 
 			<!--write-us-->
-			<section class="modal modal-write-us">
-				<!--form-->
-				<span class="modal-close">x</span>
+			<h2 class="visually-hidden">Write us form</h2>
+			<section class="modal-write-us" >
+				<form class="modal write-us-form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="write-us-item">
+					<label for="write-us-name">Ваше имя:</label>
+				<input id="write-us-name" type="text" value="" name="name" placeholder="Имя Фамилия">
+			</p>
+			<p class="write-us-item">
+				<label for="write-us-email">Ваш e-mail:</label>
+				<input id="write-us-email" type="text" value="" name="email" placeholder="email@example.com">
+			</p>
+			<p class="write-us-item">
+				<label for="write-us-text">Текст письма</label>
+				<input id="write-us-text" type="text" value="" name="text" placeholder="В свободной форме">
+			</p>
+			<button class="button" type="submit">Отправить</button>
+			<button class="modal-close" type="button">Закрыть</span>
+		</form>
 			</section>
 
 			<!--map-popup-->
 			<section class="modal modal-map">
-				<span class="modal-close">x</span>
+				<h2 class="visually-hidden">Map</h2>
+				<p>
+					<img src="img/map.jpg" width="560" height="220" alt="it's address here">
+				</p>
+				<button class="modal-close" type="button">Закрыть</span>
+			</section>
+
+			<!-- login form -->
+			<section class="modal modal-login">
+				<h2 class="visually-hidden"> Login form </h2>
+				<p>Введите свой логин и пароль</p>
+					<form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
+						<p>
+								<label class="visually-hidden" for="login">Логин</label>
+								<input id="login" class="login-user" name="login" placeholder="Логин">
+						</p>
+						<p>
+							<label class="visually-hidden" for="password">Пароль</label>
+							<input id="password" class="login-password" type="password" name="password" placeholder="Пароль">
+						</p>
+						<p class="restore-pass">
+							<label for="login-pass-info">Запомните меня</label>
+							<input type="checkbox" class="visually-hidden" name="remember-user"id="login-pass-info">
+							<a class="restore" href="#">Я забыл пароль</a>
+						</p>
+						<button type="submit" name="button" class="button">Войти</button>
+					</form>
 			</section>
 	</body>
 </html>
