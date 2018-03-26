@@ -42,10 +42,15 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
   overflow: hidden;
-
-}
+  }
 
 a {
   text-decoration: none;
@@ -60,6 +65,13 @@ a {
 
 }
 
+/* main */
+
+.main-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .user-nav,
 .site-nav,
 .catalog-menu {
@@ -70,9 +82,6 @@ a {
 .user-nav a,
 .catalog-menu a {
   color: #000000;
-  display: block;
-  padding: 25px 20px;
-  vertical-align: middle;
 }
 
 /*need to change them!!<<  */
@@ -332,17 +341,13 @@ legend {
 .search-link {
   font-family: 'Open Sans Light', Arial, sans-serif;
 }
-
-
 .main-header {
   margin-bottom: 108px;
 }
-
 .main-navigation {
   display: flex;
   flex-direction: column;
 }
-
 .user-nav {
   width: 100%;
   margin-bottom: 54px;
@@ -366,9 +371,6 @@ legend {
   padding-left: 62px;
   padding-right: 40px;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  width: 1040px;
 }
 
 .main-navigation-wrapper .container {
@@ -378,18 +380,4 @@ legend {
 
 .main-footer {
   margin-top: 75px;
-}
-
-.user-nav li:first-child {
-  width: 440px;
-  -webkit-box-flex: 5;
-  -ms-flex-positive: 5;
-  flex-grow: 5;
-}
-
-.user-nav .login-link {
-  width: 100px;
-  -webkit-box-flex: 9;
-  -ms-flex-positive: 9;
-  flex-grow: 9;
 }
