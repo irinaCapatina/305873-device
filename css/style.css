@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'Gilroy Extra Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/gilroyextrabold.ttf') format('ttf');
+  }
+
+@font-face {
+  font-family: 'Gilroy Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/gilroylight.ttf') format('ttf');
+  src: url('../fonts/gilroylight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/opensans-regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/opensans-light.ttf') format('ttf');
+  src: url('../fonts/opensans-light.ttf') format('ttf');
+}
+
+body {
+  margin: 0;
+  padding-top: 40px 0 0 0;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 33px;
+  font-weight: 300;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 15px;
+  line-height: 30px;
+  color: #c2c3c4;
+
+  background-color: #f7e296;
+
+}
+
+.user-nav,
+.site-nav,
+.catalog-menu {
+  list-style: none;
+}
+
+.site-nav a,
+.user-nav a,
+.catalog-menu a {
+  color: #000000;
+}
+
+/*need to change them!!<<  */
+.user-nav a:hover,
+.user-nav a:focus,
+.site-nav a:hover,
+.site-nav a:focus {
+  background-color: #242424;
+}
+
+.search-link li:hover,
+.search-link li:focus
+{
+    background-color: #242424;
+}
+
+/*need to change them!! >> */
+
+.site-nav {
+   text-transform: uppercase;
+   font-size: 18px;
+   line-height: 24px;
+}
+
+.catalog-menu {
+  font-size: 15px;
+  line-height: 36px;
+  color: #c2c3c4;
+}
+
+.entry-txt {
+  font-size: 47px;
+  line-height: 56px;
+  align-items: left;
+
+}
+
+.txt-description {
+  font-size: 15px;
+  line-height: 30px;
+  color: #c2c3c4;
+}
+
+.button {
+  font: inherit;
+  color: #000000;
+  font-weight: 700;
+}
+
+.offer-details,
+.products-list {
+    list-style: none;
+}
+
+.details h3 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.details p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #c2c3c4;
+}
+
+.products-item {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.details-item {
+  text-transform: uppercase;
+  list-style: none;
+  text-align: left;
+}
+
+.delivery-description {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.detail-description p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #c2c3c4;
+}
+
+.details-delivery {
+  background-color: #e5e5e5;
+}
+
+/*need to change them!!<<  */
+.brands a:hover,
+.brands a:focus {
+  background-color: #242424;
+}
+
+.about-us h2,
+.contacts h2 {
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.about-us-info,
+.contacts {
+  font-size: 15px;
+  line-height: 30px;
+  color: #696969;
+}
+
+.companies {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.footer-logo {
+  padding-top: 66px;
+  padding-left: 140px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.user-options {
+  text-align: right;
+  padding-right: 140px;
+  list-style: none;
+}
+
+.user-options a,
+.address-contacts,
+.phone-contacts {
+  color: #ffffff;
+}
+
+.address-contacts {
+  padding-left: 140px;
+}
+
+.phone-contacts {
+  padding-right: 140px;
+  text-align: right;
+}
+
+.delivery-details  {
+  list-style: none;
+}
+
+.delivery-details a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.social-media ul {
+  list-style: none;
+}
+.social-media {
+  text-align: center;
+}
+
+
+.write-us-form input[type="text"] {
+  font: inherit;
+}
+
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
+
+/* catalog */
+.catalog-txt {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.pages-catalog li {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pages-catalog,
+.colors,
+.bluetooth,
+.search-results,
+.page-nr {
+  list-style: none;
+}
+
+.filters h2,
+.search-filter p {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+legend {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.color,
+.choose-bluetooth {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.pages-catalog {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.product-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-price {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* сетки */
+
+/* header */
+/* .main-nav-header {
+  order: -1;
+  width: 163px;
+  height: 34px;
+}
+.search-link {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+}
+
+
+.main-header {
+  margin-bottom: 108px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-nav {
+  width: 100%;
+  margin-bottom: 54px;
+} */
+
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav-header {
+  width: 163px;
+  height: 34px;
+}
+
+.user-nav {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 62px;
+  padding-right: 40px;
+  list-style: none;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer {
+  margin-top: 75px;
+}
