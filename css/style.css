@@ -70,6 +70,9 @@ a {
 .user-nav a,
 .catalog-menu a {
   color: #000000;
+  display: block;
+  padding: 25px 20px;
+  vertical-align: middle;
 }
 
 /*need to change them!!<<  */
@@ -363,6 +366,9 @@ legend {
   padding-left: 62px;
   padding-right: 40px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1040px;
 }
 
 .main-navigation-wrapper .container {
@@ -372,4 +378,18 @@ legend {
 
 .main-footer {
   margin-top: 75px;
+}
+
+.user-nav li:first-child {
+  width: 440px;
+  -webkit-box-flex: 5;
+  -ms-flex-positive: 5;
+  flex-grow: 5;
+}
+
+.user-nav .login-link {
+  width: 100px;
+  -webkit-box-flex: 9;
+  -ms-flex-positive: 9;
+  flex-grow: 9;
 }
