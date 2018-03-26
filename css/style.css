@@ -60,7 +60,6 @@ a {
   font-size: 15px;
   line-height: 30px;
   color: #c2c3c4;
-
   background-color: #f7e296;
 
 }
@@ -70,12 +69,50 @@ a {
 .main-container {
   width: 1160px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .user-nav,
-.site-nav,
-.catalog-menu {
+.site-nav {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.search-link {
+  width: 52%;
+}
+
+.login-link {
+  width: 24%;
+}
+
+.compare-link {
+  width: 12%;
+}
+
+.basket-link {
+  width: 12%;
+}
+
+.products-link {
+  width: 52%;
+}
+
+.delivery-link {
+  width: 12%;
+}
+
+.guarantee-link {
+  width: 12%;
+}
+
+.contacts-link {
+  width: 24%;
 }
 
 .site-nav a,
@@ -100,11 +137,6 @@ a {
 
 /*need to change them!! >> */
 
-.site-nav {
-   text-transform: uppercase;
-   font-size: 18px;
-   line-height: 24px;
-}
 
 .catalog-menu {
   font-size: 15px;
@@ -213,7 +245,6 @@ a {
 
 .user-options {
   text-align: right;
-  padding-right: 140px;
   list-style: none;
 }
 
@@ -380,4 +411,14 @@ legend {
 
 .main-footer {
   margin-top: 75px;
+}
+
+.products-link > a,
+.delivery-link > a {
+   font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+   text-transform: uppercase;
+   font-size: 18px;
+   line-height: 24px;
+   font-weight: 700;
+   letter-spacing: 0.2em
 }
