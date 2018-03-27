@@ -414,11 +414,23 @@ legend {
 }
 
 .products-link > a,
-.delivery-link > a {
+.delivery-link > a,
+.guarantee-link > a,
+.contacts-link > a {
    font-family: 'Gilroy Extra Bold', Arial, sans-serif;
    text-transform: uppercase;
    font-size: 18px;
    line-height: 24px;
    font-weight: 700;
    letter-spacing: 0.2em
+}
+
+.products-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-menu {
+  display: none;
 }
