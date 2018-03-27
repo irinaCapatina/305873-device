@@ -372,9 +372,7 @@ legend {
 .search-link {
   font-family: 'Open Sans Light', Arial, sans-serif;
 }
-.main-header {
-  margin-bottom: 108px;
-}
+
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -433,4 +431,47 @@ legend {
 
 .catalog-menu {
   display: none;
+}
+
+.offer-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products {
+  padding: 80px 0;
+}
+
+.products-list {
+  padding: 0;
+}
+
+.products-item a {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.products-item p {
+  width: 160px;
+}
+
+a.products-item-bottom {
+  align-items: flex-end;
+}
+
+.main-header {
+  margin-top: 40px;
+  width: 1160px;
+  margin: 40px auto 0 auto;
+}
+
+.logo-wrap {
+  margin: -18px auto 0 auto;
+  width: 1040px;
 }
