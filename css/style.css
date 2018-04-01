@@ -280,7 +280,9 @@ a {
 
 .pages-catalog li {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 18px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #696969;
 }
 
 .pages-catalog,
@@ -290,6 +292,13 @@ a {
 .page-nr,
 .current-page {
   list-style: none;
+}
+
+.product-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+
 }
 
 .filters h2,
@@ -321,11 +330,15 @@ legend {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  text-align: left;
 }
 
 .product-price {
   font-size: 16px;
   line-height: 24px;
+  text-align: right;
+  color: #686868;
+  font-family: 'Gilroy Light', Arial, sans-serif;
 }
 
 /* сетки */
@@ -339,7 +352,6 @@ legend {
 }
 
 .user-nav {
-  font-family: 'Open Sans', Arial, sans-serif;
   padding: 20px 0;
   list-style: none;
   width: 1040px;
@@ -469,9 +481,9 @@ a.products-item-bottom {
 
 .shop-delivery {
   width: 140px;
-  padding-right: 74px 120px 0 0;
+  padding: 74px 120px 0 0;
   border-right: 7px solid #000;
-  margin-top: -30px;
+  margin-top: -100px;
 }
 
 .brands {
@@ -959,6 +971,7 @@ a.products-item-bottom {
   height: 70px;
   margin-top: 28px;
   padding-left: 100px;
+  text-align: left;
 }
 
 .pages-catalog {
@@ -972,6 +985,7 @@ a.products-item-bottom {
   display: flex;
   justify-content: space-between;
   margin-left: 120px;
+  padding-bottom: 50px;
 }
 
 .catalog-txt {
@@ -1006,7 +1020,7 @@ a.products-item-bottom {
 .filters {
   width: 268px;
   background-color: #efefef;
-  padding-left: 200px;
+  padding-left: 160px;
   margin: 0;
   margin-right: 70px;
 
@@ -1026,8 +1040,8 @@ fieldset {
 .catalog-line {
   content: "";
   position: absolute;
-  top: 645px;
-  right: 950px;
+  top: 600px;
+  right: 987px;
   width: 200px;
   height: 3px;
   background-color: #000;
@@ -1036,8 +1050,8 @@ fieldset {
 .color-line {
   content: "";
   position: absolute;
-  top: 740px;
-  right: 950px;
+  top: 670px;
+  right: 987px;
   width: 200px;
   height: 3px;
   background-color: #000;
@@ -1046,8 +1060,8 @@ fieldset {
 .bluetooth-line {
   content: "";
   position: absolute;
-  top: 1000px;
-  right: 950px;
+  top: 890px;
+  right: 987px;
   width: 200px;
   height: 3px;
   background-color: #000;
@@ -1055,7 +1069,7 @@ fieldset {
   margin-bottom: 14px;
 }
 
-.filter1 {
+.filter-catalog {
 padding-left: 200px;
 }
 
@@ -1080,8 +1094,65 @@ padding-left: 200px;
   width: 260px;
   padding-left: 0;
   margin: 0 auto;
+  display: list-item;
 }
 
 .exit {
   padding-left: 20px;
+}
+
+.main-header, .inner-header {
+  margin-top: 40px;
+  width: 1160px;
+  margin: 40px auto 0 auto;
+}
+
+.inner-header .site-nav {
+    padding-bottom: 50px;
+}
+
+.filter-catalog {
+  text-align: left;
+  padding-left: 60px;
+  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-right: 100px;
+}
+
+.sort-catalog {
+  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-right: 100px;
+
+}
+.pages-catalog {
+    padding-left: 40px;
+}
+
+.pages-catalog li:nth-child(1) {
+  padding-right: 20px;
+}
+
+.pages-catalog li:nth-child(2) {
+  padding-right: 40px;
+}
+
+.btn-catalog {
+  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-right: 100px;
+}
+
+.results-item {
+  width: 360px;
 }
