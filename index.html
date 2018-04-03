@@ -17,12 +17,14 @@
             </div>
             <ul class="user-nav">
                 <li class="search-link">
+									<form action="#" class="search-form">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z" />
                     </svg>
 	                    <input type="text" placeholder="Поиск по сайту" class="search-link-input">
 											<span class="search-link-span"></span>
-											<button class="search-link-btn">Найти</button>
+											<input type="submit" class="search-link-btn" value="Найти">
+										</form>
 										</li>
                 <li class="login-link">
                     <a class="login-link" href="login.html">
@@ -227,7 +229,7 @@
                     <p class="contacts">
                         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете  проверить работоспасобность покупки. Всякое бывает.
                     </p>
-										 <a href="#"><img src="img/map.jpg" width="560" height="222" alt="map"></a>
+										 <a class="button contacts-btn-map" href="https://goo.gl/maps/MYAs8WKgVRH2"><img src="img/map.jpg" width="560" height="222" alt="map"></a>
                     <a class="button link-line" href="write-us.com">Напишите нам</a>
                 </div>
             </div>
@@ -298,58 +300,23 @@
             </div>
         </div>
     </footer>
-		<!--write-us-->
-		<div class="visually-hidden">
-    <h2 class="visually-hidden">Write us form</h2>
-    <section class="modal write-us">
-			<h2 class="visually-hidden">Напишите нам</h2>
-        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="write-us-item">
-                <label for="write-us-name">Ваше имя:</label>
-                <input id="write-us-name" type="text" value="" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="write-us-item">
-                <label for="write-us-email">Ваш e-mail:</label>
-                <input id="write-us-email" type="text" value="" name="email" placeholder="email@example.com">
-            </p>
-            <p class="write-us-item">
-                <label for="write-us-text">Текст письма</label>
-                <textarea id="write-us-text" rows="4" cols="50" name="write-us-text" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="button" type="submit">Отправить</button>
-            <button class="modal-close" type="button">Закрыть</button>
-        </form>
-    </section>
-    <!--map-popup-->
-    <section class="modal modal-map">
-        <h2 class="visually-hidden">Map</h2>
-        <p>
-            <img src="img/map.jpg" width="560" height="220" alt="it's address here">
-        </p>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <!-- login form -->
-    <section class="modal modal-login">
-        <h2 class="visually-hidden"> Login form </h2>
-        <p>Введите свой логин и пароль</p>
-        <form class="modal login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-                <label class="visually-hidden" for="login">Логин</label>
-                <input id="login" class="login-user" name="login" placeholder="Логин">
-            </p>
-            <p>
-                <label class="visually-hidden" for="password">Пароль</label>
-                <input id="password" class="login-password" type="password" name="password" placeholder="Пароль">
-            </p>
-            <p class="restore-pass">
-                <label for="login-pass-info">Запомните меня</label>
-                <input type="checkbox" class="visually-hidden" name="remember-user" id="login-pass-info">
-                <a class="restore" href="#">Я забыл пароль</a>
-            </p>
-            <button type="submit" name="button" class="button">Войти</button>
-        </form>
-    </section>
-	</div>
-		<script src="js/script.js"></script>
+	<section class="modal modal-write-us">
+		<h2 class="visually-hidden">Write us popup</h2>
+		<button class="modal-close" href="more-about-us.com">Закрыть</button>
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="username">Ваше имя:</label>
+				<input class="write-us-user" id="username" type="text" name="user" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="email">Ваш e-mail:</label>
+				<input class="write-us-email" id="email" type="email" name="user-email" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="write-txt">Текст письма:</label>
+				<textarea class="write-us-text" id="txt" name="write-text" placeholder="В свободной форме"></textarea>
+				<a class="button link-line" type="button">Отправить</a>
+		</form>
+	</section>
 </body>
 </html>

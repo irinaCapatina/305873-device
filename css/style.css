@@ -477,6 +477,7 @@ a.products-item-bottom {
   font-weight: 700;
   align-items: left;
   margin-bottom: 40px;
+  z-index: 100;
 }
 
 .shop-delivery {
@@ -930,9 +931,9 @@ a.products-item-bottom {
 .search-link-input:focus ~ .search-link-span::before{
     content: "";
     position: absolute;
-    top: 40px;
-    left: -240px;
-    width: 215px;
+    top: 39px;
+    left: -252px;
+    width: 225px;
     height: 2px;
     background-color: #000;
     margin-left: 252px;
@@ -951,6 +952,7 @@ a.products-item-bottom {
     padding: 10px 20px;
     border: 2px solid #000;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .search-link-btn:hover {
@@ -960,6 +962,12 @@ a.products-item-bottom {
 
 .search-link-btn:focus {
     color: #737373;
+}
+
+.search-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* catalog */
@@ -1055,6 +1063,8 @@ fieldset {
   width: 200px;
   height: 3px;
   background-color: #000;
+  margin-top: 36px;
+
 }
 
 .bluetooth-line {
@@ -1065,8 +1075,8 @@ fieldset {
   width: 200px;
   height: 3px;
   background-color: #000;
-  magin-top: 40px;
-  margin-bottom: 14px;
+  margin-top: 40px;
+
 }
 
 .filter-catalog {
@@ -1155,4 +1165,137 @@ padding-left: 200px;
 
 .results-item {
   width: 360px;
+}
+
+.value, .color, .bluetooth-txt {
+  font-family: 'Gilroy Extra Bold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* write us form */
+.modal {
+  position: fixed;
+  color: #000000;
+}
+
+.modal-write-us{
+  top: 120px;
+  left: 25%;
+  margin-left: -230px;
+
+  width: 760px;
+  height: 390px;
+  padding: 40px 100px;
+  background-color: grey;
+  z-index: 100;
+  display: none;
+}
+
+/* .modal-close{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  top: 25px;
+
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+
+  border: none;
+  background-color: #f7e296;
+  border-radius: 50%;
+} */
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 63px;
+  height: 3px;
+  background-color: #d0d0d0;
+}
+
+/* .modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+} */
+
+.write-us-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-form label {
+  font-family: "Gilroy Extra Bold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.login-form input {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+
+.login-form input,
+.login-form textarea {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 15px;
+  opacity: 0.4;
+  color: #464646;
+  border: 3px solid transparent;
+  outline: none;
+  background-color: #f2f2f2;
+  padding-right: 20px;
+  padding: 12px 12px;
+}
+
+textarea {
+  width: 760px;
+  height: 157px;
+}
+
+.map-modal iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+
+  width: 560px;
+  height: 223px;
+  padding-bottom: 55px;
+  padding-top: 35px;
+}
+
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+
+  width: 960px;
+  height: 560px;
+  margin-top: -280px;
+  margin-left: -390px;
+
+  z-index: 10;
+
+  display: none;
+}
+
+.modal-map p {
+  margin: 0;
 }
