@@ -1353,16 +1353,50 @@ fieldset {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-
+/*
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
+
   left: -2px;
-  top: 0px;
+  top: 0;
+
   width: 23px;
   height: 23px;
 
   border: 2px solid #000000;
+} */
+
+input[type="checkbox"] + label::before {
+  position: absolute;
+  top: 68px;
+  left: 59px;
+  width: 26px;
+  height: 23px;
+  content: '';
+  background: url('../img/checkbox-off.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input[type='checkbox']:checked + label::before {
+  background: url('../img/checkbox-on.svg');
+  background-repeat: no-repeat;
+}
+
+input[type='radio'] + label::before {
+  position: absolute;
+  top: 70px;
+  left: 59px;
+  width: 25px;
+  height: 26px;
+  content: '';
+  background: url('../img/radio-off.svg') no-repeat;
+}
+
+input[type='radio'] + label::before {
+  opacity: 1;
+  background: url('../img/radio-on.svg') no-repeat;
 }
 
 .pagination {
@@ -1624,7 +1658,7 @@ textarea {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   height: 28px;
-  padding: 9px 0 3px 0;
+  padding: 9px 35px 3px 35px;
 }
 
 .link-line-write-us::before {
