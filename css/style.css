@@ -474,6 +474,7 @@ a.products-item-bottom {
   align-items: left;
   margin-bottom: 40px;
   z-index: 100;
+  position: relative;
 }
 
 .shop-delivery {
@@ -506,6 +507,7 @@ a.products-item-bottom {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  width: 180px;
 }
 
 .main-footer .main-container {
@@ -710,6 +712,32 @@ a.products-item-bottom {
     padding: 9px 0 3px 0;
 }
 
+.link-line-catalog {
+    display: block;
+    color: #000;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    height: 28px;
+    padding: 9px 0 15px 0;
+}
+
+.link-line-catalog::before {
+    content: "";
+    position: absolute;
+    background-color: #F2C52E;
+    width: 160px;
+    height: 8px;
+    top: 17px;
+    left: 0;
+    z-index: -1;
+}
+
 
 .link-line::before {
     content: "";
@@ -742,11 +770,13 @@ a.products-item-bottom {
     width: 260px;
 }
 
-.link-line:hover {
+.link-line:hover,
+.link-line-catalog:hover {
     background-color: #F2C52E;
 }
 
-.link-line:hover::before {
+.link-line:hover::before,
+.link-line-catalog:hover::before {
     display: none;
 }
 
@@ -1353,50 +1383,42 @@ fieldset {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-/*
-.filter-input-checkbox + label::before {
-  content: "";
+
+.chk-ind, .radio-ind {
+   position: relative;
+ }
+
+input[type="checkbox"] + label.chk-ind::before {
   position: absolute;
-
-  left: -2px;
-  top: 0;
-
-  width: 23px;
-  height: 23px;
-
-  border: 2px solid #000000;
-} */
-
-input[type="checkbox"] + label::before {
-  position: absolute;
-  top: 68px;
-  left: 59px;
+  top: -2px;
+  left: -40px;
   width: 26px;
   height: 23px;
-  content: '';
-  background: url('../img/checkbox-off.svg');
+  content: "";
+  background: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-input[type='checkbox']:checked + label::before {
-  background: url('../img/checkbox-on.svg');
+input[type="checkbox"]:checked + label.chk-ind::before {
+  background: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
-input[type='radio'] + label::before {
+input[type="radio"] + label.radio-ind::before {
   position: absolute;
-  top: 70px;
-  left: 59px;
+  top: -2px;
+  left: -40px;
   width: 25px;
   height: 26px;
-  content: '';
-  background: url('../img/radio-off.svg') no-repeat;
+  content: "";
+  background: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
 }
 
-input[type='radio'] + label::before {
-  opacity: 1;
-  background: url('../img/radio-on.svg') no-repeat;
+input[type="radio"]:checked + label.radio-ind::before {
+  background: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
 }
 
 .pagination {
@@ -1408,7 +1430,12 @@ input[type='radio'] + label::before {
 }
 
 .page-nr {
+    font-family: 'Gilroy Extra Bold', Arial, sans-serif;
     display: flex;
+    width: 110px;
+    margin-left: 15px;
+    list-style: none;
+    justify-content: space-between;
 }
 
 .previous ,
@@ -1425,10 +1452,32 @@ input[type='radio'] + label::before {
   padding-right: 29px;
 }
 
-.previous :hover,
-.next :hover {
+.previous p:hover,
+.next p:hover {
   cursor: pointer;
   color: rgba(0, 0, 0, 1);
+}
+
+
+.product-actions {
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.product-actions .button {
+  width: 150px;
+  margin-top: 164px;
+  margin-bottom: 8px;
+  margin-left: 6px;
+  padding: 10px 36px;
 }
 
 /* write us form */
@@ -1471,14 +1520,7 @@ input[type='radio'] + label::before {
 }
 
 
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  width: 63px;
-  height: 3px;
-  background-color: #d0d0d0;
-}
+
 
 .write-us-form p {
   margin: 0;
@@ -1670,4 +1712,8 @@ textarea {
   top: 17px;
   left: 0;
   z-index: -1;
+}
+
+.exit {
+  padding-left: 20px;
 }

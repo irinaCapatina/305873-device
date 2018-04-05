@@ -31,7 +31,8 @@
 											<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
 													<path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" />
 											</svg>
-											Войти</a>
+											Валентин Петухов</a>
+											<span class="exit">Выйти</span>
 							</li>
 							<li class="compare-link">
 									<a href="compare.com">
@@ -64,7 +65,6 @@
 								<li class="contacts-link"><a href="#">Контакты</a></li>
 							</li>
 					</ul>
-
 			</nav>
 	</header>
     <main>
@@ -124,23 +124,23 @@
                             <ul>
                                 <li class="colors">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
-                                    <label for="filter-black">Черный</label>
+                                    <label class="chk-ind" for="filter-black">Черный</label>
                                 </li>
                                 <li class="colors">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
-                                    <label for="filter-white">Белый</label>
+                                    <label class="chk-ind" for="filter-white">Белый</label>
                                 </li>
                                 <li class="colors">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
-                                    <label for="filter-blue">Синий</label>
+                                    <label class="chk-ind" for="filter-blue">Синий</label>
                                 </li>
                                 <li class="colors">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
-                                    <label for="filter-red">Красный</label>
+                                    <label class="chk-ind" for="filter-red">Красный</label>
                                 </li>
                                 <li class="colors">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
-                                    <label for="filter-pink">Розовый</label>
+                                    <label class="chk-ind" for="filter-pink">Розовый</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -149,16 +149,16 @@
 													<p class="bluetooth-txt">Bluetooth</p>
                             <ul>
                                 <li class="bluetooth">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="yes" id="filter-yes" checked>
-                                    <label for="filter-yes">Есть</label>
+                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-availability" id="filter-yes" checked>
+                                    <label class="radio-ind" for="filter-yes">Есть</label>
                                 </li>
                                 <li class="bluetooth">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="no" id="filter-no">
-                                    <label for="filter-no">Нет</label>
+                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-availability" id="filter-no">
+                                    <label class="radio-ind" for="filter-no">Нет</label>
                                 </li>
                             </ul>
                         </fieldset>
-                        <a class="btn-catalog" href="show.com">Показать</a>
+                        <a class="button link-line-catalog" href="#">Показать</a>
                     </form>
                 </section>
                 <section class="search-products">
@@ -170,6 +170,10 @@
 	                            <p class="product-title">Любительская селфи палка</p>
 	                            <p class="product-price">500 руб.</p>
 														</div>
+														<div class="product-actions">
+															<a class="button" href="#">в корзину</a>
+															<a class="compare" href="#">Добавить к сравнению</a>
+														</div>
                         </li>
                         <li>
                             <a href="#"><img src="img/item-2.jpg" width="360" height="380" alt="second product"></a>
@@ -177,12 +181,20 @@
 	                            <p class="product-title">Профессиональная селфи-палка</p>
 	                            <p class="product-price">1500 руб.</p>
 														</div>
+														<div class="product-actions">
+															<a class="button" href="#">в корзину</a>
+															<a class="compare" href="#">Добавить к сравнению</a>
+														</div>
                         </li>
                         <li class="results-item">
                             <a href="#"><img src="img/item-3.jpg" width="360" height="380" alt="third product"></a>
 														<div class="results-item-details">
 	                            <p class="product-title">Непотопляемая селфи-палка</p>
 	                            <p class="product-price">2500 руб.</p>
+														</div>
+														<div class="product-actions">
+															<a class="button" href="#">в корзину</a>
+															<a class="compare" href="#">Добавить к сравнению</a>
 														</div>
                         </li>
                         <li class="results-item">
@@ -193,16 +205,20 @@
 	                            <p class="product-price">4900 руб.</p>
 															<span class="new">new</span>
 														</div>
+														<div class="product-actions">
+						                  <a class="button" href="#">в корзину</a>
+						                  <a class="compare" href="#">Добавить к сравнению</a>
+                						</div>
                         </li>
                     </ul>
 
-                <div class="pagination">
+                <div class="pagination list-style">
                     <h2 class="visually-hidden">Страницы товаров</h2>
                     <p class="previous">Назад</p>
                     <ul class="page-nr">
-                        <li><a href="first.com">1</a></li>
-                        <li><a href="second.com">2</a></li>
-                        <li><a href="third.com">3</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
                     </ul>
                     <p class="next">Вперед</p>
                 </div>
@@ -215,8 +231,7 @@
             <div class="footer-top">
                 <div class="footer-logo">
                     <a href="#" class="footer-logo-link">
-                    <img src="img/logo-footer.png" width="163" height="36" alt="logo-footer">
-                                    </a>
+                    <img src="img/logo-footer.png" width="163" height="36" alt="logo-footer"></a>
                 </div>
                 <ul class="user-options">
                     <li>
