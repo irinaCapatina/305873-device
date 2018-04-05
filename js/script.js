@@ -6,6 +6,66 @@ var slideButtonOne = document.querySelector(".slider-btn-01");
 var slideButtonTwo = document.querySelector(".slider-btn-02");
 var slideButtonThree = document.querySelector(".slider-btn-03");
 
+var link = document.querySelector(".write-us-btn");
+var popup = document.querySelector(".modal-write-us");
+var close = popup.querySelector(".modal-close");
+
+var form = popup.querySelector("write-us-form");
+var username = popup.querySelector("[name=username]");
+var email = popup.querySelector("[name=email]");
+var text = popup.querySelector("[name=text]");
+
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem("username");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+link.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList("modal-show");
+
+  if (storage) {
+    username.value = storage;
+    email.focus();
+  } else {}
+  username.focus();
+}
+});
+
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+});
+
+form.addEventListener("submit", function (evt) {
+  if(!username.value || !email.value || !text.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+    localStorage.setItem("username", username.value);
+  }
+}
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+
+
 slideButtonOne.addEventListener("click", function (evt) {
     evt.preventDefault();
     slideOne.classList.remove("slide-hide");
@@ -35,28 +95,3 @@ slideButtonThree.addEventListener("click", function (evt) {
     slideButtonTwo.classList.remove("slider-btn-active");
     slideButtonThree.classList.add("slider-btn-active");
 });
-
-
-  var mapLink = document.querySelector(".contacts-btn-map");
-
-  var mapPopup = document.querySelector(".modal-map");
-  var mapClose = mapPopup.querySelector(".modal-close");
-
-  mapLink.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      mapPopup.classList.add("modal-show");
-    });
-
-    mapClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      mapPopup.classList.remove("modal-show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      evt.preventDefault();
-      if (evt.keyCode === 27) {
-        if (mapPopup.classList.contains("modal-show")) {
-          mapPopup.classList.remove("modal-show");
-        }
-      }
-    });
