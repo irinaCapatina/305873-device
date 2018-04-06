@@ -1458,7 +1458,6 @@ input[type="radio"]:checked + label.radio-ind::before {
   color: rgba(0, 0, 0, 1);
 }
 
-
 .product-actions {
   align-items: center;
   position: absolute;
@@ -1518,9 +1517,6 @@ input[type="radio"]:checked + label.radio-ind::before {
   border: none;
   background: url('../img/modal-close.svg') no-repeat;
 }
-
-
-
 
 .write-us-form p {
   margin: 0;
